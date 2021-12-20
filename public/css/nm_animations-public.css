@@ -1,0 +1,27 @@
+.center-animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.animation-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.animation-container svg{
+  width: 300px;
+  height: 120px;
+}
+
+.copy-text {
+  max-width: 150px;
+  text-align: center;
+  color: #000000;
+  font: 700 1.5rem/1 Objective, "Courier New", Courier, monospace;
+  overflow: hidden;
+}
