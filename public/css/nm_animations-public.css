@@ -19,9 +19,16 @@
 }
 
 .copy-text {
-  max-width: 150px;
-  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: -115px;
+  right: -75px;  
+  width: 200px;
+  height: 100px;
+  transform: rotate(5deg);
   color: #000000;
+  text-align: center;
   font: 700 1.5rem/1 Objective, "Courier New", Courier, monospace;
-  overflow: hidden;
 }

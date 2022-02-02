@@ -68,7 +68,7 @@ class Nm_animations_Public
                 <script> 
                     const <?php echo $animation; ?>Animation = () => {
                         const assetPath = "<?php echo plugin_dir_url(__FILE__) . 'assets/'; ?>";
-                        const copyText = "<?php echo sanitize_text_field($copy_text); ?>";
+                        const copyText = '"<?php echo sanitize_text_field($copy_text); ?>"';
                         <?php require plugin_dir_path(__FILE__) . "/js/nm_animations-{$animation}.js"; ?> 
                     }
                     <?php echo $animation; ?>Animation(); 

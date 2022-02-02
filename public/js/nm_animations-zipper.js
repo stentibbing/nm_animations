@@ -1,5 +1,4 @@
 window.addEventListener("load", () => {
-  console.log("zipper: ", copyText);
   if (!!document.getElementById("zipper-animation")) {
     //New animejs timeline, looping from 8500 to the end
     const animationTimeline = anime.timeline({
@@ -37,11 +36,7 @@ window.addEventListener("load", () => {
 
     const copyTextContainer = document.createElement("div");
     copyTextContainer.setAttribute("class", "copy-text");
-    copyTextContainer.style.position = "absolute";
-    copyTextContainer.style.width = 0;
-    copyTextContainer.style.height = 0;
-    copyTextContainer.style.top = "-75px";
-    copyTextContainer.style.right = "-75px";
+    copyTextContainer.style.opacity = 0;
     copyTextContainer.innerText = copyText;
     animationContainer.appendChild(copyTextContainer);
 
@@ -123,11 +118,9 @@ window.addEventListener("load", () => {
 
     animationTimeline.add({
       targets: copyTextContainer,
-      rotate: 390,
-      width: "180px",
-      height: "100px",
+      opacity: 1,
       easing: "easeInOutQuad",
-      duration: 500,
+      duration: 1000,
     });
 
     // Zipper container appears

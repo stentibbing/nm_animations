@@ -1,18 +1,18 @@
 window.addEventListener("load", () => {
-  if (!!document.getElementById("chilli-animation")) {
+  if (!!document.getElementById("caramel-animation")) {
     //New animejs timeline, looping from 8500 to the end
     const animationTimeline = anime.timeline({
       autoplay: false,
       loop: true,
       loopComplete: function (animation) {
         animation.pause();
-        animation.seek(4450);
+        animation.seek(4150);
         animation.play();
       },
     });
 
     // Select animation container
-    const animationContainer = document.getElementById("chilli-animation");
+    const animationContainer = document.getElementById("caramel-animation");
 
     const scrollerPage = animationContainer.closest(".nm-scroller-single-page");
 
@@ -48,18 +48,20 @@ window.addEventListener("load", () => {
     eyes.draw(svgContainer);
     animationContainer.appendChild(svgContainer);
 
-    const chilly = document.createElement("div");
-    chilly.style.position = "absolute";
-    chilly.style.backgroundImage = "url(" + assetPath + "/chilli.png)";
-    chilly.style.backgroundRepeat = "no-repeat";
-    chilly.style.backgroundSize = "contain";
-    chilly.style.top = "85px";
-    chilly.style.right = "30px";
-    chilly.style.width = "0";
-    chilly.style.height = "0";
-    chilly.style.transform = "rotate(270deg)";
-    chilly.style.zIndex = 2;
-    animationContainer.appendChild(chilly);
+    const caramel = document.createElement("div");
+    caramel.style.position = "absolute";
+    caramel.style.backgroundImage = "url(" + assetPath + "/caramel.png)";
+    caramel.style.backgroundRepeat = "no-repeat";
+    caramel.style.backgroundSize = "100% 200px";
+    caramel.style.backgroundPosition = "center";
+    caramel.style.opacity = 1;
+    caramel.style.top = "80px";
+    caramel.style.right = "150px";
+    caramel.style.width = 0;
+    caramel.style.height = "200px";
+    caramel.style.transform = "rotate(180deg)";
+    caramel.style.zIndex = 2;
+    animationContainer.appendChild(caramel);
 
     eyes.open(1000, 150);
 
@@ -72,29 +74,13 @@ window.addEventListener("load", () => {
       duration: 1000,
     });
 
-    // Chilli animation
+    // Caramel animation
 
     animationTimeline.add({
-      targets: chilly,
-      width: "340px",
-      height: "150px",
-      translateX: 70,
-      rotate: 370,
-      easing: "easeInOutQuad",
-      duration: 600,
-    });
-
-    animationTimeline.add({
-      targets: chilly,
-      rotate: 355,
-      easing: "easeInOutQuad",
-      duration: 600,
-    });
-
-    animationTimeline.add({
-      targets: chilly,
-      rotate: 360,
-      easing: "easeInOutQuad",
+      targets: caramel,
+      width: "300px",
+      right: "20px",
+      easing: "easeOutElastic(10, .5)",
       duration: 600,
     });
 
