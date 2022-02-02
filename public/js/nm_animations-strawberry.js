@@ -106,7 +106,7 @@ window.addEventListener("load", () => {
     animationTimeline.add(
       {
         targets: mouth,
-        d: "M 50 40 C 80 70, 220 70, 250 40",
+        d: "M 50 40 C 80 75, 220 75, 250 40",
         easing: "easeInOutQuad",
         duration: 150,
         complete: () => {
@@ -124,7 +124,7 @@ window.addEventListener("load", () => {
           width: "50px",
           left: "90px",
           rotate: "0",
-          duration: 400,
+          duration: 300,
         },
         {
           height: "55px",
@@ -132,7 +132,7 @@ window.addEventListener("load", () => {
           left: "110px",
           top: "130px",
           rotate: "5",
-          duration: 250,
+          duration: 150,
         },
         {
           height: "60px",
@@ -140,7 +140,7 @@ window.addEventListener("load", () => {
           left: "130px",
           top: "132px",
           rotate: "10",
-          duration: 200,
+          duration: 100,
         },
         {
           height: "55px",
@@ -148,7 +148,7 @@ window.addEventListener("load", () => {
           left: "150px",
           top: "135px",
           rotate: "15",
-          duration: 150,
+          duration: 100,
         },
         {
           height: "50px",
@@ -156,7 +156,7 @@ window.addEventListener("load", () => {
           left: "190px",
           top: "142px",
           rotate: "20",
-          duration: 300,
+          duration: 200,
         },
       ],
       easing: "linear",
