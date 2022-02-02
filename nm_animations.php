@@ -27,7 +27,7 @@ if (! defined('WPINC')) {
 /**
  * Currently plugin version.
  */
-define('NM_ANIMATIONS_VERSION', '1.0.1');
+define('NM_ANIMATIONS_VERSION', '1.0.2');
 
 /**
  * The code that runs during plugin activation.
