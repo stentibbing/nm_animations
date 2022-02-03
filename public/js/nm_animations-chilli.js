@@ -53,7 +53,7 @@ window.addEventListener("load", () => {
     chilly.style.backgroundImage = "url(" + assetPath + "/chilli.png)";
     chilly.style.backgroundRepeat = "no-repeat";
     chilly.style.backgroundSize = "contain";
-    chilly.style.top = "85px";
+    chilly.style.top = "95px";
     chilly.style.right = "30px";
     chilly.style.width = "0";
     chilly.style.height = "0";
@@ -76,9 +76,9 @@ window.addEventListener("load", () => {
 
     animationTimeline.add({
       targets: chilly,
-      width: "340px",
-      height: "150px",
-      translateX: 70,
+      width: "300px",
+      height: "130px",
+      translateX: 45,
       rotate: 370,
       easing: "easeInOutQuad",
       duration: 600,
